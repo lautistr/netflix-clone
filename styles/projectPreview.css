@@ -20,12 +20,12 @@ html {
 }
 
 .movie-container {
-    height: 33vh;
+    height: 37vh;
     width: 100%;
     background-color: var(--very-dark-grey);
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     border-radius: 4px 4px 0 0;
 }
 
@@ -37,10 +37,9 @@ html {
 }
 
 .movie__image img {
-    height: 95%;
+    width: 100%;
     object-fit: cover;
     border-radius: 2px;
-
 }
 
 .movie__info {
@@ -99,12 +98,18 @@ html {
     width: 12px;
 }
 
-.movie__buttons {
-    grid-row: 3 / 4;
+.buttons-container {
+    grid-row: 4 / 6;
     grid-column: 1 / 9;
+    position: relative;
+}
+
+.movie__buttons {
     display: flex;
     justify-content: space-around;
     align-self: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .movie__buttons button {
@@ -164,4 +169,49 @@ html {
     color: var(--white);
 }
 
+.movie__more {
+    position: absolute;
+    bottom: 0;
+    background: none;
+    width: 100%;
+    border: none;
+    border-top: 1px solid var(--shadow-grey);
+    padding: 6px;
+}
+
+.movie__more .more__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movie__more div {
+    display: flex;
+}
+
+.movie__more p {
+    color: var(--white);
+    font-size: 1.3rem;
+    margin-left: 8px;
+}
+
+.movie__more .more--left-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../assets/icons/info-white.png');
+}
+
+.movie__more .more--right-icon {
+    width: 10px;
+    height: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../assets/icons/right-arrow.svg');
+    margin-right: 4px;
+}
 
