@@ -19,7 +19,7 @@ html {
     font-family: 'Nunito Sans', sans-serif;
 }
 
-.project-container {
+.movie-container {
     height: 33vh;
     width: 100%;
     background-color: var(--very-dark-grey);
@@ -29,56 +29,58 @@ html {
     border-radius: 4px 4px 0 0;
 }
 
-.project__image {
+.movie__image {
     grid-column: 1 / 3;
     grid-row: 1 / 3;
     margin-top: 12px;
     margin-left: 12px;
 }
 
-.project__image img {
+.movie__image img {
     height: 95%;
     object-fit: cover;
     border-radius: 2px;
 
 }
 
-.project__info {
+.movie__info {
     grid-column: 3 / 8;
     grid-row: 1 / 3;
     margin-left: 12px;
 }
 
-.project__info--title {
+.movie__info--title {
     color: var(--white);
     font-weight: bold;
     font-size: 1.8rem;
     margin-top: 12px;
 }
 
-.project__info--features {
+.movie__info--features {
     display: flex;
     justify-content: flex-start;
     gap: 24px;
     color: #999999;
     margin-top: 4px;
-}
-
-.project__info--features .features--first {
     list-style-type: none;
 }
 
-.project__features li {
+.movie__features li {
     font-size: 1rem;
 }
 
-.project__info--description {
+.movie__info--description {
     color: var(--white);
     font-size: 1.3rem;
     margin-top: 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.project__close {
+.movie__close {
     grid-row: 1 / 2;
     grid-column: 8 / 9;
     margin-top: 8px;
@@ -92,12 +94,12 @@ html {
     align-items: center;
 }
 
-.project__close img {
+.movie__close img {
     height: 12px;
     width: 12px;
 }
 
-.project__buttons {
+.movie__buttons {
     grid-row: 3 / 4;
     grid-column: 1 / 9;
     display: flex;
@@ -105,7 +107,7 @@ html {
     align-self: center;
 }
 
-.project__buttons button {
+.movie__buttons button {
     height: 36px;
     width: 36px;
     border-radius: 50%;
@@ -114,7 +116,7 @@ html {
     margin: auto 0;
 }
 
-.project__buttons span {
+.movie__buttons span {
     margin-top: 4px;
     display: inline-block;
     background-position: center;
@@ -122,33 +124,44 @@ html {
     background-repeat: no-repeat;
 }
 
-.project__buttons p {
+.movie__buttons p {
     margin-top: 4px;
     text-align: center;
     color: #999999;
 }
 
-.project__buttons .buttons--project button {
+.movie__buttons .buttons--play button {
     background-color: var(--white);
 }
 
-.buttons--project span {
+.buttons--play span {
     height: 16px;
     width: 16px;
     background-image: url('../assets/icons/play-black.png');
     margin-left: 2px;
 }
 
-.buttons--code span {
-    height: 24px;
-    width: 24px;
-    background-image: url('../assets/icons/GitHub-Mark-Light-64px.png');
+.buttons--download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.buttons--copy span {
-    height: 20px;
-    width: 20px;
-    background-image: url('../assets/icons/copy.png');
+.buttons--download span {
+    height: 16px;
+    width: 16px;
+    background-image: url('../assets/icons/white-download.png');
+}
+
+.buttons--share span {
+    height: 16px;
+    width: 16px;
+    background-image: url('../assets/icons/white-share.png');
+}
+
+.buttons--list button {
+    font-size: 3.4rem;
+    color: var(--white);
 }
 
 
