@@ -1,0 +1,25 @@
+:root {
+    --main-red: #b81d24;
+    --pink-red: #e50914;
+    --black: #000000;
+    --soft-black: #141414;
+    --white: #f5f5f1;
+    --very-dark-grey: #2b2b2b;
+    --shadow-grey: #525252;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.movie__image img {
+    width: 100px;
+    border-radius: 4px;
+}
