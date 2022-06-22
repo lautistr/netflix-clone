@@ -17,13 +17,6 @@ html {
     font-family: 'Nunito Sans', sans-serif;
 }
 
-body {
-    
-    background-image: url('../assets/images/not-found.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 header {
     background-color: var(--black);
@@ -44,6 +37,13 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
+}
+body {
+    
+    background-image: url('../assets/images/not-found.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .not-found__title {
